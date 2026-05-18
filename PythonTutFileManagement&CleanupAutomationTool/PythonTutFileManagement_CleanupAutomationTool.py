@@ -19,3 +19,10 @@ if os.path.exists(folder_path):
 
     # 3. The filter loop
     text_file_count= 0
+
+    for file_name in all_files:
+        # Checking if the file ends with '.txt'
+        if file_name.endswith(".txt"):
+            print(f"[FOUND TEXT FILE]: {file_name}")
+            text_file_count = text_file_count + 1
+
