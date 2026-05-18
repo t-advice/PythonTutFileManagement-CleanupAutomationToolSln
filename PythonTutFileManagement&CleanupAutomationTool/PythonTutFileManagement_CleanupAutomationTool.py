@@ -16,7 +16,7 @@ if os.path.exists(folder_path):
     # list all the files inside my downloads folder
     all_files = os.listdir(folder_path)
 
-    print(f"Total items found: {len(all_files)}")
+    print(f"Total items found: {len(all_files)}") # len means lenght of the list.
     print("-" *35)
 
     # 3. The filter loop
