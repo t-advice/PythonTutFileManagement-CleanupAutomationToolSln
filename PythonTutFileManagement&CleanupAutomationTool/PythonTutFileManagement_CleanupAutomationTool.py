@@ -5,7 +5,9 @@ print("-" *35)
 
 #1. Asking which folder to scan 
 #   For a quick test, i will use the "Downloads" folder
-folder_path = input(r"C:\Users\USER\Downloads")
+folder_path = input(r"ENTER your path:  ")
+#folder_path = r"C:\Users\USER\Downloads"
+
 
 #2. Check if the folder actually exists
 if os.path.exists(folder_path):
