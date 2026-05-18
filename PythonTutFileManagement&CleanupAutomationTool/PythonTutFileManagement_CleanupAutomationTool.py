@@ -5,7 +5,7 @@ print("-" *35)
 
 #1. Asking which folder to scan 
 #   For a quick test, i will use the "Downloads" folder
-folder_path = input("C:\Users\USER\Downloads")
+folder_path = input(r"C:\Users\USER\Downloads")
 
 #2. Check if the folder actually exists
 if os.path.exists(folder_path):
@@ -26,3 +26,8 @@ if os.path.exists(folder_path):
             print(f"[FOUND TEXT FILE]: {file_name}")
             text_file_count = text_file_count + 1
 
+    print("-" *35)
+    print(f"Scan Complete! Found {text_file_count} text (.txt) files.")
+
+else:
+    print("Error: That folder path does not exist. Check your spelling")
